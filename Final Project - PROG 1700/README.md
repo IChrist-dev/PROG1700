@@ -23,32 +23,32 @@ Running the program
 When started, the user is presented with the Main Menu list of options. Select an option (ex. 1. Add a task) by entering a 
 number value at the keyboard. 
 
-1. Add a task
+1. Add a task - 
 The user is then asked to provide the details of the task including: task name, due date, and a description. All fields are
 optional so can be left blank. The status of a new task will always be set to `Not Done` but this can be changed later via
 the edit option.
 A final prompt asks the user if they wish to add this new task to the arrayList. This check exists in case the user noticed
 they have made a typo. If y (case insensitive) is selected, the task object is added to the list.
 
-2. Mark a task as done
+2. Mark a task as done - 
 The user is asked which task from the list they wish to mark done. Tasks are listed by Task numbers, via Main Menu option 5.
 After selecting a task (assuming the task exists) its status is automatically changed to `Done`.
 The user is then asked if they wish to remove the completed task. 
 
-3. Remove a task
+3. Remove a task - 
 Selecting this option leads to a prompt similar to the previous option. The task # is selected and the user is asked to 
 confirm they want to remove the task. This is a safety measure to prevent accidental task deletion. If yes, the task is 
 removed.
 
-4. Edit a task
+4. Edit a task -
 Like before, a task # is requested. The user is then presented with another list of options. This is to select which attribute
 of the Task object they wish to edit. When an option # is input, the corresponding prompt asks for an updated value for that
 attribute. The new value is saved and the task is updated.
 
-5. Display all tasks
+5. Display all tasks - 
 This option is useful to see when a change to the task list has been successful. In the code, a for-loop iterates through the
 array list of Task objects, calling the printTask() method from the extended PrintOut class for each task.
 
-6. Exit
+6. Exit - 
 The user is asked if they are sure they want to exit. If yes is selected, this simply collapses the while-loop which allows 
 the Menu.run() method to continuously operate.
